@@ -1,28 +1,29 @@
-import MultiResolutionCompat from "./MultiResoultionCompat";
-
 const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class CloseToBorderComponent extends cc.Component {
-    @property()
-    isCloseToBottom: boolean = false;
+    @property({
+        tooltip: "是否紧贴下方，不能和紧贴上方同时使用"
+    })
+    closeToBottom: boolean = false;
 
-    @property()
-    closeToBottonPx: number = 0;
+    @property({
+        tooltip: "距离下方的距离（px），开启紧贴下方时使用"
+    })
+    marginBottomInPx: number = 0;
+
+    // @property({
+    //     tooltip: "是否紧贴上方，不能和紧贴下方同时使用"
+    // })
+    // closeToTop: boolean = false;
 
     onLoad() {
-        this.node.position = this.getShowAllModeNodePositionCloseToBottom(this.node.position);
-    }
-
-    /**
-     * 计算当前游戏设计分辨率在ShowAll模式适配后，传入来的原始坐标在ShowAll模式下的「贴近屏幕底部」实际坐标值
-     */
-    getShowAllModeNodePositionCloseToBottom(nodePosInDesign: cc.Vec2): cc.Vec2 {
-        let srcScaleForShowAll = MultiResolutionCompat.getShowAllModeScale();
-        let bottomBorderHeightInCanvas = MultiResolutionCompat.getShowAllModeVerticalBorderHeight() / 2;
-        let srcNodePosYInCanvas = nodePosInDesign.y * srcScaleForShowAll;
-        let finalNodePosYInCanvas = srcNodePosYInCanvas - bottomBorderHeightInCanvas;
-        let nodePosYInDesign = finalNodePosYInCanvas / srcScaleForShowAll;
-        return cc.v2(nodePosInDesign.x, nodePosYInDesign);
+        // 计算本节点在父节点下，贴底边时的坐标，需要特别注意处理锚点
+        if (this.closeToBottom) {
+            this.node.position = cc.v2(
+                this.node.position.x,
+                -this.node.parent.height / 2 + this.node.anchorY * this.node.height + this.marginBottomInPx
+            );
+        }
     }
 }

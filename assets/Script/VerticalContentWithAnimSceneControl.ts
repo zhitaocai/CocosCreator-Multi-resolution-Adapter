@@ -38,7 +38,8 @@ export default class VerticalContentWithAnimSceneControl extends cc.Component {
 
     private _closeToBottomNodeHidePos: cc.Vec2 = null;
 
-    onLoad() {
+    start() {
+        // 记录显示和隐藏的位置
         this._closeToLeftNodeShowPos = this.closeToLeftNode.position;
         this._closeToLeftNodeHidePos = this.closeToLeftNode.position.sub(cc.v2(this.closeToLeftNode.width, 0));
 
@@ -50,9 +51,7 @@ export default class VerticalContentWithAnimSceneControl extends cc.Component {
 
         this._closeToBottomNodeShowPos = this.closeToBottomNode.position;
         this._closeToBottomNodeHidePos = this.closeToBottomNode.position.sub(cc.v2(0, this.closeToBottomNode.height));
-    }
 
-    start() {
         // 设置无限循环加载进度条
         this.progressBar.totalLength = this.progressBar.node.width;
         this.progressBar.progress = 0;

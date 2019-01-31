@@ -1774,16 +1774,31 @@
     "_id": "03h4+B8VxK8JIEU/ZXrTuK"
   },
   {
-    "__type__": "6bfe4RRvIFCjpSNWCSrwW/v",
+    "__type__": "cc.Widget",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 38
     },
     "_enabled": true,
-    "isCloseToBottom": false,
-    "closeToBottonPx": 0,
-    "_id": "6bY6XAGMVDeZluYDmhH5lZ"
+    "alignMode": 1,
+    "_target": null,
+    "_alignFlags": 20,
+    "_left": 0,
+    "_right": 0,
+    "_top": 0,
+    "_bottom": 0,
+    "_verticalCenter": 0,
+    "_horizontalCenter": 0,
+    "_isAbsLeft": true,
+    "_isAbsRight": true,
+    "_isAbsTop": true,
+    "_isAbsBottom": true,
+    "_isAbsHorizontalCenter": true,
+    "_isAbsVerticalCenter": true,
+    "_originalWidth": 0,
+    "_originalHeight": 0,
+    "_id": "1cKCtADHNAx5sKmuPiXrAQ"
   },
   {
     "__type__": "4010diIR0ZMhJ1/d++3vQ8Y",
