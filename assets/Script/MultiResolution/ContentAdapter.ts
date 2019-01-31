@@ -45,6 +45,9 @@ export default class ContentAdapter extends cc.Component {
         this.node.width = this.node.width * (cc.view.getCanvasSize().width / realWidth);
         this.node.height = this.node.height * (cc.view.getCanvasSize().height / realHeight);
 
+        // 3. 因为本节点的宽高发生了改变，所以要手动更新剩下子节点的宽高
+        this._updateAllChildNodeWidget(this.node);
+
         // if (CC_DEBUG) {
         //     cc.log(`节点在SHOW_ALL模式下展示的宽高: ${realWidth} x ${realHeight}`);
         //     cc.log(`节点在SHOW_ALL模式下展示的缩放: ${srcScaleForShowAll}`);
@@ -54,5 +57,21 @@ export default class ContentAdapter extends cc.Component {
         //         }）等价于于原节点的宽高(${this.node.width}x${this.node.height})`
         //     );
         // }
+    }
+
+    private _updateAllChildNodeWidget(parentNode: cc.Node) {
+        if (parentNode == null) {
+            return;
+        }
+        let widget = parentNode.getComponent(cc.Widget);
+        if (widget != null) {
+            widget.updateAlignment();
+        }
+        if (parentNode.childrenCount == 0) {
+            return;
+        }
+        parentNode.children.forEach((childNode: cc.Node) => {
+            this._updateAllChildNodeWidget(childNode);
+        });
     }
 }

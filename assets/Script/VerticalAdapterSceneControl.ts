@@ -1,7 +1,7 @@
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class VerticalSceneControl extends cc.Component {
+export default class VerticalAdapterSceneControl extends cc.Component {
     @property(cc.ProgressBar)
     progressBar: cc.ProgressBar = null;
 
@@ -9,8 +9,6 @@ export default class VerticalSceneControl extends cc.Component {
     progressLabel: cc.Label = null;
 
     start() {
-        this.progressBar.node.width = this.progressBar.node.getParent().width;
-        this.progressBar.node.height = this.progressBar.node.getParent().height;
         this.progressBar.totalLength = this.progressBar.node.width;
         this.progressBar.progress = 0;
         this.schedule(() => {
