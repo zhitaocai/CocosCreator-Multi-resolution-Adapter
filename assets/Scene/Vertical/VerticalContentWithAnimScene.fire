@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.71732177734375,
-      "y": 0.71732177734375,
+      "x": 0.547911989694426,
+      "y": 0.547911989694426,
       "z": 1
     },
     "_quat": {
@@ -55,7 +55,7 @@
     "_zIndex": 0,
     "groupIndex": 0,
     "autoReleaseAssets": false,
-    "_id": "c65d17ce-3bd9-4f36-ae56-ae67caf3b452"
+    "_id": "766a504a-cd28-4fe0-b65b-152472c18051"
   },
   {
     "__type__": "cc.Node",
@@ -79,10 +79,10 @@
     "_level": 0,
     "_components": [
       {
-        "__id__": 44
+        "__id__": 46
       },
       {
-        "__id__": 45
+        "__id__": 47
       }
     ],
     "_prefab": null,
@@ -348,6 +348,9 @@
     "_components": [
       {
         "__id__": 43
+      },
+      {
+        "__id__": 44
       }
     ],
     "_prefab": null,
@@ -1771,31 +1774,16 @@
     "_id": "03h4+B8VxK8JIEU/ZXrTuK"
   },
   {
-    "__type__": "cc.Widget",
+    "__type__": "6bfe4RRvIFCjpSNWCSrwW/v",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 38
     },
     "_enabled": true,
-    "alignMode": 1,
-    "_target": null,
-    "_alignFlags": 4,
-    "_left": 260,
-    "_right": 260,
-    "_top": 0,
-    "_bottom": 0,
-    "_verticalCenter": 0,
-    "_horizontalCenter": 0,
-    "_isAbsLeft": true,
-    "_isAbsRight": true,
-    "_isAbsTop": true,
-    "_isAbsBottom": true,
-    "_isAbsHorizontalCenter": true,
-    "_isAbsVerticalCenter": true,
-    "_originalWidth": 200,
-    "_originalHeight": 0,
-    "_id": "e4ZXAmjIJP2J14Vrx/gBz5"
+    "isCloseToBottom": false,
+    "closeToBottonPx": 0,
+    "_id": "6bY6XAGMVDeZluYDmhH5lZ"
   },
   {
     "__type__": "4010diIR0ZMhJ1/d++3vQ8Y",
@@ -1806,6 +1794,86 @@
     },
     "_enabled": true,
     "_id": "e3rOVMgitIoo1+ZyYtXq1j"
+  },
+  {
+    "__type__": "cc.Button",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 8
+    },
+    "_enabled": true,
+    "duration": 0.1,
+    "zoomScale": 1.2,
+    "clickEvents": [
+      {
+        "__id__": 45
+      }
+    ],
+    "_N$interactable": true,
+    "_N$enableAutoGrayEffect": false,
+    "_N$transition": 0,
+    "transition": 0,
+    "_N$normalColor": {
+      "__type__": "cc.Color",
+      "r": 214,
+      "g": 214,
+      "b": 214,
+      "a": 255
+    },
+    "_N$pressedColor": {
+      "__type__": "cc.Color",
+      "r": 211,
+      "g": 211,
+      "b": 211,
+      "a": 255
+    },
+    "pressedColor": {
+      "__type__": "cc.Color",
+      "r": 211,
+      "g": 211,
+      "b": 211,
+      "a": 255
+    },
+    "_N$hoverColor": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "hoverColor": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_N$disabledColor": {
+      "__type__": "cc.Color",
+      "r": 124,
+      "g": 124,
+      "b": 124,
+      "a": 255
+    },
+    "_N$normalSprite": null,
+    "_N$pressedSprite": null,
+    "pressedSprite": null,
+    "_N$hoverSprite": null,
+    "hoverSprite": null,
+    "_N$disabledSprite": null,
+    "_N$target": null,
+    "_id": "96biYqlHNM7pWXjAbvVuva"
+  },
+  {
+    "__type__": "cc.ClickEvent",
+    "target": {
+      "__id__": 2
+    },
+    "component": "",
+    "_componentId": "29806sWIPNL6JQ7uEF5tzjC",
+    "handler": "onClick",
+    "customEventData": ""
   },
   {
     "__type__": "cc.Canvas",
@@ -1837,6 +1905,18 @@
     },
     "progressLabel": {
       "__id__": 21
+    },
+    "closeToLeftNode": {
+      "__id__": 23
+    },
+    "closeToTopNode": {
+      "__id__": 28
+    },
+    "closeToRightNode": {
+      "__id__": 33
+    },
+    "closeToBottomNode": {
+      "__id__": 38
     },
     "_id": "97xfoiYVBLM4Si/akK+nbA"
   }
