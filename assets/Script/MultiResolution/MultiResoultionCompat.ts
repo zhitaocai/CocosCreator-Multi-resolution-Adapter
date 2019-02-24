@@ -5,16 +5,6 @@ export default class MultiResolutionCompat extends cc.Component {
     static DEFAULT_RESOLUTION_WIDTH = 720;
     static DEFAULT_RESOLUTION_HEIGHT = 1280;
 
-    // @property({
-    //     tooltip: "设计分辨率的宽度"
-    // })
-    // designResolutionWidth: number = MultiResolutionCompat.DEFAULT_RESOLUTION_WIDTH;
-
-    // @property({
-    //     tooltip: "设计分辨率的高度"
-    // })
-    // designResolutionHeight: number = MultiResolutionCompat.DEFAULT_RESOLUTION_HEIGHT;
-
     onLoad() {
         // 第一种：全屏拉伸，iPhoneX或平板类的会拉伸变形
         // cc.view.setDesignResolutionSize(720, 1280, cc.ResolutionPolicy.EXACT_FIT);

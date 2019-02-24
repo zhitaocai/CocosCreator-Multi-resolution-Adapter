@@ -1,7 +1,7 @@
 const { ccclass, property } = cc._decorator;
 
 @ccclass
-export default class VerticalContentWithAnimSceneControl extends cc.Component {
+export default class ContentWithAnimScene extends cc.Component {
     @property(cc.ProgressBar)
     progressBar: cc.ProgressBar = null;
 

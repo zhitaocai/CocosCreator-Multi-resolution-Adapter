@@ -1,5 +1,8 @@
 const { ccclass, property } = cc._decorator;
 
+/**
+ * 未完成
+ */
 @ccclass
 export default class CloseToBorderComponent extends cc.Component {
     @property({

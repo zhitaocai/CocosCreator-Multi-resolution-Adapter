@@ -20,8 +20,10 @@ const { ccclass, property } = cc._decorator;
  *  @example
     ```
     // e.g.
-    // 设置 SHOW_ALL 模式的参考代码
+    // 代码中设置 SHOW_ALL 模式的参考代码
     cc.view.setDesignResolutionSize(720, 1280, cc.ResolutionPolicy.SHOW_ALL);
+
+    // 或者 Canvas 组件中，同时勾选 Fit Width 和 Fit Height 
     ```
  */
 @ccclass
