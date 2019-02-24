@@ -1,5 +1,8 @@
 const { ccclass, property } = cc._decorator;
 
+/**
+ * 未完成
+ */
 @ccclass
 export default class MultiResolutionCompat extends cc.Component {
     static DEFAULT_RESOLUTION_WIDTH = 720;
