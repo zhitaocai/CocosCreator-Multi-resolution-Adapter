@@ -12,4 +12,4 @@
 
 ## 支持一下作者吧
 
-![./static/pay.png]()
+![](./static/pay.png)
