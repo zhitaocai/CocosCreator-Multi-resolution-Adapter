@@ -9,3 +9,7 @@
 5. [Cocos Creator 多分辨率完美适配系列-5（贴边栏动画实现）](https://www.jianshu.com/p/e5264904d03f)
 6. [Cocos Creator 多分辨率完美适配系列-6（刘海屏适配）](https://www.jianshu.com/p/0fe32dbfe0c9)
 7. [Cocos Creator 多分辨率完美适配系列-7（封装库使用）](https://www.jianshu.com/p/de3365853b41)
+
+## 支持一下作者吧
+
+![./static/pay.png]()
