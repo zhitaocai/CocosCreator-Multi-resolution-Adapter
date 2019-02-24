@@ -40,15 +40,19 @@ export default class ContentWithAnimScene extends cc.Component {
 
     start() {
         // 记录显示和隐藏的位置
+        this.closeToLeftNode.getComponent(cc.Widget).updateAlignment()
         this._closeToLeftNodeShowPos = this.closeToLeftNode.position;
         this._closeToLeftNodeHidePos = this.closeToLeftNode.position.sub(cc.v2(this.closeToLeftNode.width, 0));
 
+        this.closeToTopNode.getComponent(cc.Widget).updateAlignment()
         this._closeToTopNodeShowPos = this.closeToTopNode.position;
         this._closeToTopNodeHidePos = this.closeToTopNode.position.add(cc.v2(0, this.closeToTopNode.height));
 
+        this.closeToRightNode.getComponent(cc.Widget).updateAlignment()
         this._closeToRightNodeShowPos = this.closeToRightNode.position;
         this._closeToRightNodeHidePos = this.closeToRightNode.position.add(cc.v2(this.closeToRightNode.width, 0));
 
+        this.closeToBottomNode.getComponent(cc.Widget).updateAlignment()
         this._closeToBottomNodeShowPos = this.closeToBottomNode.position;
         this._closeToBottomNodeHidePos = this.closeToBottomNode.position.sub(cc.v2(0, this.closeToBottomNode.height));
 
