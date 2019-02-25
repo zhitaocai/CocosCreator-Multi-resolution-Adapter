@@ -16,4 +16,4 @@
 
 ## 支持一下作者吧
 
-![](./static/PAY.png)
+![](./static/pay.png)
