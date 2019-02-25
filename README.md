@@ -1,5 +1,9 @@
 # Cocos Creator 多分辨率完美适配演示项目
 
+## 效果预览
+
+![](./static/SHOW_ALL_*.png)
+
 本系列教程指引：
 
 1. [Cocos Creator 多分辨率完美适配系列-1（现状与最终效果）](https://www.jianshu.com/p/c34577e37dd5)
@@ -12,4 +16,4 @@
 
 ## 支持一下作者吧
 
-![](./static/pay.png)
+![](./static/PAY.png)
