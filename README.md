@@ -3,10 +3,38 @@
 [![](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/zhitaocai/CocosCreator-Multi-resolution-Adapter/blob/master/LICENSE)
 [![](https://img.shields.io/badge/Support-Cocos%20Creator%20v2.x-orange.svg)](http://www.cocos.com/creator)
 
-
 ## 效果预览
 
 ![](./static/SHOW_ALL_*.png)
+
+## 使用说明
+
+场景如下：
+
+![](./static/SceneSettingPreview.png)
+
+1. Canvas 开启 SHOW ALL 模式，并设置你的设计分辨率，如：这里例子为 **720 x 1280**
+    - ![](./static/USAGE_CANVAS.png)
+2. Background 背景节点实现 SHOW ALL 模式下 **缩放适配** ，操作如下：
+
+    1. Background 背景节点保持和设计分辨率一致的宽高（不能用 Widget 组件）
+    2. Background 背景节点挂入 [BackgroundAdapter.ts](./assets/Script/MultiResolution/BackgroundAdapter.ts) 组件
+
+    操作后结果如下：
+
+    - ![](./static/USAGE_BACKGROUND.png)
+
+3. Content 内容节点实现 SHOW ALL 模式下 **尺寸适配（实质为宽高重置）**，操作如下：
+
+    1. Content 内容节点保持和设计分辨率一致的宽高（不能用 Widget 组件）
+    2. Content 节点挂入 [ContentAdapter.ts](./assets/Script/MultiResolution/ContentAdapter.ts) 组件
+    3. 需要实现尺寸适配的节点，直接挂在本节点下就可以，同时子节点可以正常开发使用，比如：直接用 Widget 组件实现撑满父节点范围也是支持的
+
+    操作后结果如下：
+
+    - ![](./static/USAGE_CONTENT.png)
+
+## 更多
 
 本系列教程指引：
 
