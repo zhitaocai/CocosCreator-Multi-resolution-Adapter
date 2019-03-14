@@ -1,7 +1,7 @@
 # Cocos Creator 多分辨率完美适配演示项目
 
 [![](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/zhitaocai/CocosCreator-Multi-resolution-Adapter/blob/master/LICENSE)
-[![](https://img.shields.io/badge/Support-Cocos%20Creator%20v2.x-orange.svg)](http://www.cocos.com/creator)
+[![](https://img.shields.io/badge/Support-Cocos%20Creator%20v2.0.x-orange.svg)](http://www.cocos.com/creator)
 
 ## 效果预览
 
