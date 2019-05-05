@@ -5,7 +5,7 @@
 
 ## 效果预览
 
-![](./static/SHOW_ALL_*.png)
+![](static/SHOW_ALL_*.png)
 
 ## 使用说明
 
@@ -45,6 +45,15 @@
 5. [Cocos Creator 多分辨率完美适配系列-5（贴边栏动画实现）](https://www.jianshu.com/p/e5264904d03f)
 6. [Cocos Creator 多分辨率完美适配系列-6（刘海屏适配）](https://www.jianshu.com/p/0fe32dbfe0c9)
 7. [Cocos Creator 多分辨率完美适配系列-7（封装库使用）](https://www.jianshu.com/p/de3365853b41)
+
+
+## 微信小游戏全面屏适配
+
+1. 全屏适配参考上面章节
+2. 下面为全屏屏顶部适配效果图，具体实现参考 [WXGameTopBarUIAdapter.ts](./assets/Scene/WXGameFullScene/WXGameTopBarUIAdapter.ts)
+
+![](static/WXGAME_FULLSCREEN_TOPBAR_UI_ADAPTER.gif)
+
 
 ## 支持一下作者吧
 
